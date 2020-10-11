@@ -1,0 +1,80 @@
+h2 {
+color:white;
+margin-top:2%;
+font-size:35px;
+font-family: 'Special Elite', cursive;
+}
+.boded{
+background-image:url(/static/images/bg.jpeg);
+padding-top:2%;
+background-repeat:no-repeat;
+background-position:center;
+background-size:cover;
+}
+.overlay{
+margin:0;
+padding:0;
+background-color:rgba(49, 83, 15,0.3);
+}
+.imagea{
+margin-top:34%;
+font-size:45px;
+font-weight:bolder;
+}
+a{
+text-decoration:none;
+}
+.image{
+font-family: 'Special Elite', cursive;
+margin-bottom:18%;
+
+}
+body{
+ scroll-behavior: smooth;
+background-image:url(/static/images/g.jpg);
+background-attachment:fixed;
+background-repeat:no-repeat;
+background-position:center;
+background-size:cover;
+}
+
+.modalcard{
+background-color:rgba(10,10,10,0.8);
+color:white;
+padding:3%;
+border:none;
+}
+h3{
+color:white;
+font-family: 'Special Elite', cursive;
+}
+#locations{
+color:white;
+font-family: 'Special Elite', cursive;
+}
+hr{
+background:white;
+height:2px;
+}
+#imageheader{
+font-family: 'Yeseva One', cursive;
+}
+
+.imgdesc{
+font-family: 'Vollkorn', serif;
+}
+#foundnon{
+
+}
+#found{
+margin-bottom:3%;
+}
+#btn{
+margin-right:6px;
+}
+.cat{
+float:center;
+background:purple;
+padding:4px;
+border-radius:6px;
+}
