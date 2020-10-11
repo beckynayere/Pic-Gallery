@@ -60,7 +60,14 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
+class AutoConfig(object):
+    """
+    Autodetects the config file and type.
+    """
+    SUPPORTED = {
+        'settings.ini': RepositoryIni,
+        '.env': RepositoryEnv,
+    }
 # Application definition
 
 INSTALLED_APPS = [
@@ -82,6 +89,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'photos.urls'
