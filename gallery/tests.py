@@ -42,11 +42,11 @@ class ImageTest(TestCase):
         self.assertEquals(found_image, image)
 
             # update image test
-    def test_update_image(self):
-        self.new_image.save_image()
-        self.new_image.update_image(self.image_test.id, 'photos/test.jpg')
-        changed_img = Image.objects.filter(image='photos/test.jpg')
-        self.assertTrue(len(changed_img) > 0)
+    # def test_update_image(self):
+    #     self.new_image.save_image()
+    #     self.new_image.update_image(self.image_test.id, 'photos/test.jpg')
+    #     changed_img = Image.objects.filter(image='photos/test.jpg')
+    #     self.assertTrue(len(changed_img) > 0)
 
         # search image by location test
     def test_search_image_by_location(self):

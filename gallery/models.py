@@ -1,17 +1,23 @@
 from django.db import models
+import sys  
+sys.setrecursionlimit(10000)
 
 # Create your models here.
 
 
 
 class Category(models.Model):
-    name = models.CharField(max_length=50)
+    name = models.CharField(max_length=30)
 
     def __str__(self):
         return self.name
 
     def save_category(self):
         self.save()
+
+    def update_category(self):
+        self.update()
+
 
     def delete_category(self):
         self.delete()
@@ -38,6 +44,10 @@ class Location(models.Model):
 
     def delete_location(self):
         self.delete()
+
+    def update_location(self):
+        self.update()
+
 
 
 
@@ -76,6 +86,11 @@ class Image(models.Model):
     def search_by_category(cls, category):
         images = cls.objects.filter(category__name__icontains=category)
         return images
+
+    @classmethod
+    def update_image(cls, id, updates):
+        cls.objects.filter(id=id).update(updates)
+
 
     def __str__(self):
         return self.name
