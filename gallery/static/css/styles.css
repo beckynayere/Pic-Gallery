@@ -5,7 +5,7 @@ font-size:35px;
 font-family: 'Special Elite', cursive;
 }
 .boded{
-background-image:url(/static/images/background.gif);
+background-image:url(//gallery/static/images/background.gif);
 padding-top:2%;
 background-repeat:no-repeat;
 background-position:center;
@@ -16,7 +16,7 @@ margin:0;
 padding:0;
 background-color:rgba(49, 83, 15,0.3);
 }
-.imagea{
+.images{
 margin-top:34%;
 font-size:45px;
 font-weight:bolder;
@@ -31,7 +31,7 @@ margin-bottom:18%;
 }
 body{
  scroll-behavior: smooth;
-background-image:url(/static/images/ggallery.jpg);
+background-image:url(//gallery/static/images/ggallery.jpg);
 background-attachment:fixed;
 background-repeat:no-repeat;
 background-position:center;
@@ -45,7 +45,7 @@ padding:3%;
 border:none;
 }
 h3{
-color:lavenderblush;
+color:brown;
 font-family: 'Special Elite', cursive;
 }
 #locations{
@@ -53,7 +53,7 @@ color:white;
 font-family: 'Special Elite', cursive;
 }
 hr{
-background:lavenderblush;
+background:rgb(165, 133, 133);
 height:2px;
 }
 #imageheader{
