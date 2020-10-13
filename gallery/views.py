@@ -1,5 +1,5 @@
 from django.shortcuts import render
-rom django.http import HttpResponse,Http404,HttpRequest
+from django.http import HttpResponse,Http404,HttpRequest
 from .models import Image,Location
 import datetime as dt
 # import sys  
@@ -11,12 +11,12 @@ def index(request):
     images = Image.objects.all()
     locations = Location.get_locations()
     print(locations)
-    return render(request, 'gallery/index.html', {'images': images[::-1], 'locations': locations})
+    return render(request, 'all-gallery/index.html', {'images': images[::-1], 'locations': locations})
 
 def image_location(request, location):
     images = Image.filter_by_location(location)
     print(images)
-    return render(request, 'gallery/location.html', {'location_images': images})
+    return render(request, 'all-gallery/location.html', {'location_images': images})
 
 def categories(request):
     categories = Category.objects.all()
@@ -25,7 +25,7 @@ def categories(request):
     return render(request, 'categories.html', {"categories":categories})
 
 
- def category(request, id):
+def category(request, id):
 
     try:
         category = Category.objects.get(id =id)

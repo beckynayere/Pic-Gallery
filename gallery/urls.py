@@ -7,8 +7,9 @@ app_name='galery'
 
 urlpatterns=[
     url(r'^$', views.index, name='index'),
-    url(r'^search/', views.search_results, name='search'),
+    url(r'^search/', views.search_results, name='search_results'),
     url(r'^category/(\d+)', views.category, name='category'),
+
     url(r'^location/(?P<location>\w+)/', views.image_location, name='location')
 
 ]

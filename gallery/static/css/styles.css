@@ -1,11 +1,11 @@
 h2 {
-color:white;
+color:lavenderblush;
 margin-top:2%;
 font-size:35px;
 font-family: 'Special Elite', cursive;
 }
 .boded{
-background-image:url(/static/images/bg.jpeg);
+background-image:url(/static/images/background.gif);
 padding-top:2%;
 background-repeat:no-repeat;
 background-position:center;
@@ -31,7 +31,7 @@ margin-bottom:18%;
 }
 body{
  scroll-behavior: smooth;
-background-image:url(/static/images/g.jpg);
+background-image:url(/static/images/ggallery.jpg);
 background-attachment:fixed;
 background-repeat:no-repeat;
 background-position:center;
@@ -40,12 +40,12 @@ background-size:cover;
 
 .modalcard{
 background-color:rgba(10,10,10,0.8);
-color:white;
+color:lavenderblush;
 padding:3%;
 border:none;
 }
 h3{
-color:white;
+color:lavenderblush;
 font-family: 'Special Elite', cursive;
 }
 #locations{
@@ -53,7 +53,7 @@ color:white;
 font-family: 'Special Elite', cursive;
 }
 hr{
-background:white;
+background:lavenderblush;
 height:2px;
 }
 #imageheader{
@@ -63,9 +63,8 @@ font-family: 'Yeseva One', cursive;
 .imgdesc{
 font-family: 'Vollkorn', serif;
 }
-#foundnon{
 
-}
+
 #found{
 margin-bottom:3%;
 }
@@ -73,8 +72,8 @@ margin-bottom:3%;
 margin-right:6px;
 }
 .cat{
-float:center;
+border-radius:6px;
 background:purple;
 padding:4px;
-border-radius:6px;
+float:center;
 }
