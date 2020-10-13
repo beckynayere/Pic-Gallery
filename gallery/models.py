@@ -1,6 +1,6 @@
 from django.db import models
 import sys  
-sys.setrecursionlimit(10000)
+sys.setrecursionlimit(10**6)
 
 # Create your models here.
 
@@ -25,7 +25,7 @@ class Category(models.Model):
 
 
 class Location(models.Model):
-    name = models.CharField(max_length=60)
+    name = models.CharField(max_length=30)
 
     @classmethod
     def get_locations(cls):
@@ -55,9 +55,9 @@ class Location(models.Model):
 class Image(models.Model):
 
     image = models.ImageField(upload_to='images/')
-    name =models.CharField(max_length=60)
+    name =models.CharField(max_length=30)
     description =models.TextField()
-    author =models.CharField(max_length=40, default='admin')
+    author =models.CharField(max_length=30, default='admin')
     date =models.DateTimeField(auto_now_add=True)
     category =models.ForeignKey(
         'Category',

@@ -21,6 +21,6 @@ from django.conf.urls import url,include
 urlpatterns = [
     path('admin/', admin.site.urls),
     # url(r'^admin/', admin.site.urls),
-    url(r'', include('photos.urls'))
+    # url(r'', include('photos.urls'))
 
 ]

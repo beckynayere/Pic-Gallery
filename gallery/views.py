@@ -2,6 +2,9 @@ from django.shortcuts import render
 rom django.http import HttpResponse,Http404,HttpRequest
 from .models import Image,Location
 import datetime as dt
+# import sys  
+# sys.setrecursionlimit(10000)
+
 
 # Create your views here.
 def index(request):
