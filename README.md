@@ -33,7 +33,7 @@ https://nayersgallery.herokuapp.com/
     Technologies used in this application include python,Django, powershell, css and javascript.
 
 ## Support and contact details
-Incase of any issues using the site please contact: +254701824796 or dancan.oruko96@gmail.com
+Incase of any issues using the site please contact nereahhopebecky@gmail.com
 
 
 ### License
